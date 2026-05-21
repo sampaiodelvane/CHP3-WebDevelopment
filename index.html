@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jogos Favoritos - CP3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela de Login -->
+        <section id="login-section">
+            <h1>Login do Sistema</h1>
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu usuário">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <button onclick="realizarLogin()">Entrar</button>
+            <p id="login-error" class="error-message"></p>
+        </section>
+
+        <!-- Área da Lista (CRUD) -->
+        <section id="crud-section" style="display: none;">
+            <h1>Meus Jogos Favoritos</h1>
+            
+            <div class="add-controls">
+                <input type="text" id="new-item" placeholder="Nome do jogo">
+                <div class="button-group">
+                    <button onclick="adicionarAoInicio()">Adicionar ao Início</button>
+                    <button onclick="adicionarAoFinal()">Adicionar ao Final</button>
+                </div>
+                <p id="crud-error" class="error-message"></p>
+            </div>
+
+            <ul id="lista-jogos">
+                <!-- Itens renderizados dinamicamente -->
+            </ul>
+
+            <button class="logout-btn" onclick="logout()">Sair</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
