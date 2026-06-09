@@ -1,4 +1,5 @@
 CP3 - CRUD e IA Generativa
+
 1. IAs Consultadas
 Para o desenvolvimento deste projeto, foram consultadas as seguintes Inteligências Artificiais:
 1	ChatGPT-4 (OpenAI)
@@ -11,18 +12,19 @@ Prompt Inicial e Final (Não houve necessidade de refinamento):
 Crie uma aplicação web completa (HTML, CSS e JavaScript puro) para um sistema de cadastro de "Catálogo de Jogos Favoritos".
 
 Requisitos Funcionais:
-4	Tela de Login:
-◦	Credenciais: Usuário "aluno" e Senha "fiap2025".
-◦	Validação: Campos não podem ser vazios.
-◦	Feedback: Mostrar mensagem de erro na tela para credenciais incorretas.
-◦	Transição: Após login, ocultar formulário e mostrar a área da lista.
-5	Lista de Jogos (CRUD):
-◦	Iniciar com 3 jogos (ex: "The Legend of Zelda", "Elden Ring", "Minecraft").
-◦	Adicionar jogo ao final da lista.
-◦	Adicionar jogo ao início da lista.
-◦	Editar jogo (abrir um prompt ou campo, não permitir vazio, manter original se cancelar).
-◦	Remover jogo individualmente pela posição (índice).
-◦	A tela deve atualizar automaticamente após qualquer alteração.
+
+Tela de Login:
+Credenciais: Usuário "aluno" e Senha "fiap2025".
+Validação: Campos não podem ser vazios.
+Feedback: Mostrar mensagem de erro na tela para credenciais incorretas.
+Transição: Após login, ocultar formulário e mostrar a área da lista.
+Lista de Jogos (CRUD):
+Iniciar com 3 jogos (ex: "The Legend of Zelda", "Elden Ring", "Minecraft").
+Adicionar jogo ao final da lista.
+Adicionar jogo ao início da lista.
+Editar jogo (abrir um prompt ou campo, não permitir vazio, manter original se cancelar).
+Remover jogo individualmente pela posição (índice).
+A tela deve atualizar automaticamente após qualquer alteração.
 
 Requisitos Técnicos:
 •	Use apenas HTML, CSS e JavaScript Vanilla (sem frameworks).
@@ -33,6 +35,7 @@ Requisitos Técnicos:
 Entregue o código completo em blocos separados para index.html, style.css e script.js.
 
 3. Análise das Respostas
+
 ChatGPT-4
 O ChatGPT-4 entregou um código funcional, porém apresentou alguns problemas de arquitetura. Ele misturou a lógica de manipulação do DOM (Document Object Model) com a lógica de manipulação de dados do array, o que dificulta a manutenção. Além disso, utilizou a função alert() nativa do navegador para exibir erros de validação, ignorando a instrução de mostrar a mensagem diretamente na tela. Por fim, falhou na validação da edição, permitindo que o usuário salvasse um item vazio.
 
